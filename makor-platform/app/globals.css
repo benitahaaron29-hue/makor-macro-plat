@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------------------------------------------------------------
+   Makor Platform — global resets and viewport baseline.
+   The platform component injects its own component-scoped styles for fonts,
+   keyframes, and scrollbar treatment. Anything global lives here.
+   --------------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #F1EEE7;
+  color: #2A2545;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  /* Institutional desktop product — preserve the executive layout on
+     narrower viewports by allowing horizontal scroll rather than reflowing.
+     This avoids any redesign at smaller widths. */
+  min-width: 1280px;
+  overflow-x: auto;
+}
+
+@media (min-width: 1280px) {
+  body {
+    min-width: 0;
+    overflow-x: hidden;
+  }
+}
+
+button {
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+::selection {
+  background: rgba(126, 111, 177, 0.3);
+  color: #1A1532;
+}

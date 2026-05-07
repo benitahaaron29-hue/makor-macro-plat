@@ -1,0 +1,26 @@
+{
+  "name": "makor-platform",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Makor Securities Macro Intelligence Platform — institutional FX & macro briefing workspace.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "lucide-react": "^0.460.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}
